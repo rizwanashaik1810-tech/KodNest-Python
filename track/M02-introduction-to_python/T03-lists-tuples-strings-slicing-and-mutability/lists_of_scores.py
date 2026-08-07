@@ -7,12 +7,15 @@ for i in range(n):
 
 search_score = int(input())
 
-print(f"Highest Score: {max(scores)}")
-print(f"Lowest Score: {min(scores)}")
-print(f"Total Score: {sum(scores)/len(scores)}")
+highest = max(scores)
+lowest = min(scores)
+total = sum(scores)
+
+print(f"Highest Score: {highest}")
+print(f"Lowest Score: {lowest}")
+print(f"Total Score: {total}")
 
 if search_score in scores:
-    print("Search Result:", Found)
+    print("Search Result: Found")
 else:
-    print("Search Result:", Not Found)
-    
+    print("Search Result: Not Found")
